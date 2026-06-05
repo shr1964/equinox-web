@@ -1,0 +1,782 @@
+{
+  "seo": {
+    "home": {
+      "title": "Equinox International — Import, Export & Global Logistics",
+      "description": "Equinox International is a Cairo-based import and export agency, managing customs, compliance, and international shipping on behalf of enterprise clients across Egypt and the UAE."
+    },
+    "about": {
+      "title": "About — Equinox International",
+      "description": "The story, mission, and operating principles behind Equinox International — a Cairo-based logistics agency working across Egypt and the UAE."
+    },
+    "services": {
+      "title": "Services — Equinox International",
+      "description": "Import agency, customs clearance, international shipping, freight forwarding, and compliance services from Equinox International."
+    },
+    "clients": {
+      "title": "Clients — Equinox International",
+      "description": "Partner portfolio across Egypt and the UAE — telecoms, infrastructure, distribution, and technology leaders served by Equinox International."
+    },
+    "team": {
+      "title": "Team — Equinox International",
+      "description": "A compact, senior team of customs, finance, and logistics professionals. Every shipment we move has one accountable owner."
+    },
+    "company": {
+      "title": "Company Overview — Equinox International",
+      "description": "A formal corporate overview — legal identity, structure, services, and references for procurement vetting and due diligence."
+    },
+    "contact": {
+      "title": "Contact — Equinox International",
+      "description": "Open a conversation with operations. New enquiries answered the same business day."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "clients": "Clients",
+    "company": "Company",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "loading": "Loading…",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "explore": "Explore"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Equinox International · EST. Cairo",
+      "title1": "Moving business",
+      "title2": "beyond borders.",
+      "sub": "A specialist import and export agency for companies that need to move goods globally without procedural friction. We carry the licenses, manage the customs, and deliver on schedule — on behalf of you.",
+      "ctaPrimary": "Start a shipment",
+      "ctaSecondary": "Explore services",
+      "stats": {
+        "yearsValue": "10",
+        "yearsLabel": "Years of operation",
+        "clientsValue": "9",
+        "clientsLabel": "Enterprise clients",
+        "marketsValue": "EG · AE",
+        "marketsLabel": "Active markets",
+        "coverageValue": "24/7",
+        "coverageLabel": "Operational coverage"
+      }
+    },
+    "mission": {
+      "eyebrow": "About Equinox",
+      "title1": "We don't just move goods.",
+      "title2": "We move business forward.",
+      "lede": "For more than a decade, Equinox International has acted as a logistical bridge for businesses that operate without their own import licenses. We carry the credentials, infrastructure, and regulatory expertise to make international trade feel local.",
+      "link": "Read the full story"
+    },
+    "marquee": {
+      "items": [
+        "Import Agency",
+        "Customs Clearance",
+        "Sea · Air · Land",
+        "Compliance & Quality",
+        "Egypt · UAE"
+      ]
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "What we deliver.",
+      "lede": "Seven operational pillars covering every stage of cross-border trade — from IOR and DDP through to freight forwarding, customs clearance, and warehousing — under one accountable partner.",
+      "items": [
+        {
+          "anchor": "ior",
+          "image": "ship-aerial.jpg",
+          "imageAlt": "Container ship aerial",
+          "title1": "IOR / EOR",
+          "title2": "Services",
+          "desc": "Import and export on your behalf — without establishing a local legal entity."
+        },
+        {
+          "anchor": "ddp",
+          "image": "crane-loading.jpg",
+          "imageAlt": "Crane loading containers",
+          "title1": "DDP",
+          "title2": "",
+          "desc": "End-to-end Delivered Duty Paid solutions that remove risk and ensure complete compliance across all destinations."
+        },
+        {
+          "anchor": "freight",
+          "image": "ship-plane.jpg",
+          "imageAlt": "Container ship and cargo plane aerial view",
+          "title1": "Freight",
+          "title2": "forwarding",
+          "desc": "Air, sea, and land shipments managed with full compliance from documentation to final delivery."
+        },
+        {
+          "anchor": "logistics",
+          "image": "port-day.jpg",
+          "imageAlt": "Cargo at port",
+          "title1": "Logistics &",
+          "title2": "supply chain",
+          "desc": "End-to-end supply chain management covering IOR, 3PL warehousing, and reverse logistics."
+        },
+        {
+          "anchor": "compliance",
+          "image": "container-inspection.jpg",
+          "imageAlt": "Inspector on container being lifted by crane",
+          "title1": "Trade",
+          "title2": "compliance",
+          "desc": "Compliantly ship dual-use technology hardware across borders without navigating regulations alone."
+        },
+        {
+          "anchor": "customs",
+          "image": "port-tugs.jpg",
+          "imageAlt": "Ship being tugged into port",
+          "title1": "Customs",
+          "title2": "clearance",
+          "desc": "Professional clearance with ACID registration, Nafeza processing, and full documentation support."
+        },
+        {
+          "anchor": "warehousing",
+          "image": "warehousing.jpg",
+          "imageAlt": "Forklift loading cargo into aircraft at night",
+          "title1": "Warehousing",
+          "title2": "& storage",
+          "desc": "State-of-the-art facilities for domestic and international shipments — flexible and scalable."
+        }
+      ],
+      "outro1": "Let us handle the logistics, so you can",
+      "outro2": "focus on growth.",
+      "outroCta": "Talk to operations"
+    },
+    "industries": {
+      "eyebrow": "Industries",
+      "title": "Sectors we move at scale.",
+      "lede": "From telecoms infrastructure to consumer technology, our agency model supports diverse cargo types and compliance profiles.",
+      "tags": [
+        "Telecoms & Networking",
+        "Electronics & Technology",
+        "Industrial Infrastructure",
+        "Consumer Goods & Retail",
+        "Heavy Equipment",
+        "Energy & Utilities",
+        "Distribution & Wholesale"
+      ],
+      "anchorsLabel": "Anchor partners include",
+      "anchors": [
+        "Vodafone Egypt",
+        "El Sewedy Digital",
+        "Benya Capital",
+        "Westcon Comstor"
+      ]
+    },
+    "whyUs": {
+      "eyebrow": "Why Equinox",
+      "title": "What sets us apart.",
+      "lede": "Four operating principles that make us a category of one for our clients — and a steady choice for boards making infrastructure decisions.",
+      "cards": [
+        {
+          "title": "Reliable global network",
+          "desc": "Partner corridors spanning Egypt, the UAE, and onward routes into Europe, MENA, and Asia — with managed accountability at every hand-off."
+        },
+        {
+          "title": "Transparent pricing & timelines",
+          "desc": "No hidden surcharges. Quoted timelines are committed timelines, with real-time visibility from origin to delivery."
+        },
+        {
+          "title": "Regulatory expertise in every market",
+          "desc": "A specialist customs team that's spent careers — not weeks — inside the rules of every country we operate in."
+        },
+        {
+          "title": "Personalised support at every step",
+          "desc": "A dedicated logistics officer for each account. One phone number, one inbox, complete ownership."
+        }
+      ]
+    },
+    "realResult": {
+      "eyebrow": "Proof",
+      "title1": "Real",
+      "title2": "result.",
+      "title3": "Real",
+      "title4": "impact.",
+      "lede": "A proven track record across Egypt and the UAE, supporting infrastructure rollouts, distribution programs, and enterprise procurement — with clear, compliant, reliable shipping at the center.",
+      "link": "See our client portfolio",
+      "corridorLabel": "Active corridor",
+      "corridorRoute": "Alexandria → Jebel Ali",
+      "corridorLat": "31.20° N",
+      "corridorLon": "29.91° E"
+    },
+    "clients": {
+      "eyebrow": "Trusted by industry leaders",
+      "viewAll": "View all clients",
+      "learnMore": "Learn More"
+    },
+    "testimonials": {
+      "eyebrow": "In their words",
+      "title": "What clients say.",
+      "items": [
+        {
+          "text": "Equinox simplified the entire import process for our network rollouts. Documentation, customs, last-mile — all under one accountable team. We've reclaimed weeks per shipment.",
+          "initials": "AH",
+          "name": "Ahmed Hosny",
+          "role": "Procurement Lead · Telecoms Sector"
+        },
+        {
+          "text": "Regulatory navigation across Egypt and the UAE used to be the slowest part of our quarter. Working with Equinox, it's now a quiet background process — exactly what good logistics should be.",
+          "initials": "SK",
+          "name": "Sarah Kamel",
+          "role": "Operations Director · Distribution"
+        },
+        {
+          "text": "Reliable, transparent, and unusually direct. Equinox doesn't oversell — they quote what's deliverable and then they deliver it. Three years in, no regrets.",
+          "initials": "RT",
+          "name": "Ramy Tawfik",
+          "role": "Supply Chain Manager · Industrial"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title1": "Frequently",
+      "title2": "asked questions.",
+      "lede": "Everything we get asked most often. If your question isn't here, the operations team replies the same business day.",
+      "link": "Ask the team",
+      "items": [
+        {
+          "q": "What countries do you operate in?",
+          "a": "We operate primarily out of Egypt and the UAE, with active corridors into Europe, North Africa, and the wider GCC. Origin reach extends globally through established partner networks — please contact us for country-specific routing."
+        },
+        {
+          "q": "Can you help with customs clearance only?",
+          "a": "Yes. Although most clients engage us for the full lifecycle, standalone customs clearance and documentation handling is one of our most-requested services."
+        },
+        {
+          "q": "What types of goods can you handle?",
+          "a": "Telecoms equipment, electronics, industrial infrastructure, consumer goods, and most general cargo. We confirm cargo eligibility against Egyptian standard specifications and destination regulations before quoting."
+        },
+        {
+          "q": "How long does shipping typically take?",
+          "a": "Sea freight between Egypt and the UAE typically clears in 10–18 days door-to-door. Air freight runs 3–5 days. Land routes vary with origin. Every shipment is quoted with a committed delivery window."
+        },
+        {
+          "q": "Do I need my own import license to work with you?",
+          "a": "No. Equinox's agency model exists specifically for businesses that don't hold their own import card or licenses. We import on your behalf using our credentials."
+        },
+        {
+          "q": "What's the engagement model — project or retainer?",
+          "a": "Both. We support one-off shipments as well as long-term retainer relationships with quarterly volume commitments. Pricing is transparent on either model."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Get in touch",
+      "title1": "Ready to ship",
+      "title2": "and source globally?",
+      "sub": "Whether you're importing critical infrastructure or exporting product into new markets, we're here to move business forward.",
+      "ctaPrimary": "Contact us",
+      "ctaSecondary": "Browse services"
+    },
+    "ctaForm": {
+      "eyebrow": "Get in touch",
+      "title": "Start the conversation.",
+      "lede": "Tell us about your shipment or trade requirement and our operations team will come back to you the same business day.",
+      "formTitle": "Send us an inquiry",
+      "formSub": "All fields marked * are required. We reply within one business day.",
+      "labels": {
+        "name": "Full name",
+        "phone": "Phone",
+        "email": "Email",
+        "company": "Company name",
+        "description": "Description"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "phone": "+20 or +971 number",
+        "email": "your@company.com",
+        "company": "Your company name",
+        "description": "Tell us about your shipment or trade requirement…"
+      },
+      "submit": "Send inquiry",
+      "success": "Received — the operations team will follow up within one business day."
+    }
+  },
+  "about": {
+    "head": {
+      "crumb": "About",
+      "eyebrow": "Established in Cairo",
+      "title": "A logistical bridge for businesses without borders.",
+      "sub": "Equinox International is a specialist agency built to move goods between continents on behalf of companies that lack the licenses, infrastructure, or appetite to manage the procedural complexity themselves."
+    },
+    "story": {
+      "eyebrow": "Our story",
+      "title": "Tramlining Regional Supply Chains: Overcoming the Regulatory Bottleneck",
+      "paragraphs": [
+        "Across Egypt and the wider region, ambitious enterprises frequently encounter a critical operational bottleneck: the intricate web of import cards, regulatory licensing, customs documentation, and certificates of conformity. Navigating these bureaucratic hurdles often severely compromises supply chain agility, forcing even well-established corporations to operate at the speed of administrative red tape.",
+        "Equinox International was founded specifically to dismantle these barriers. As a fully licensed Joint Stock Company leveraging our own established import credentials, we empower clients to source, transport, and clear goods with unparalleled enterprise velocity. By partnering with us, organizations eliminate the need to construct or maintain capital-intensive, complex in-house regulatory frameworks.",
+        "For over a decade, Equinox has been the trusted trade compliance partner for market leaders in telecommunications, distribution, and infrastructure across Egypt and the UAE. We support Tier-1 enterprises whose operations depend entirely on precision, reliability, and the seamless, uninterrupted arrival of critical shipments."
+      ]
+    },
+    "mvv": {
+      "missionLabel": "Mission",
+      "missionText": "We are committed to providing comprehensive and seamless import and supply solutions for businesses that lack the necessary licenses, by managing all customs, regulatory, and logistical processes with high efficiency, ensuring their goods arrive on time and with the required quality.",
+      "visionLabel": "Vision",
+      "visionText": "To be the premier and most trusted logistical partner for local companies aiming for global market access, empowering them to compete without procedural restrictions.",
+      "valuesLabel": "Core values",
+      "valuesTitle": "What we stand for.",
+      "values": [
+        { "num": "01", "title": "Logistical efficiency", "desc": "Focusing on speed and precision in completing all operational stages." },
+        { "num": "02", "title": "Integrity & transparency", "desc": "Building trust through clear dealings and full commitment." },
+        { "num": "03", "title": "Client empowerment", "desc": "Helping our clients concentrate on their core business without worrying about complex import procedures." }
+      ]
+    },
+    "philosophy": {
+      "eyebrow": "How we operate",
+      "title": "Operational philosophy.",
+      "lede": "A short reading of how our team approaches each shipment — the principles that make our agency model defensible at scale.",
+      "steps": [
+        { "num": "01", "title": "Quoted timelines are committed timelines.", "desc": "If we quote a window, it's a window we've stress-tested against the actual customs office, the actual port, and the actual destination. We don't reduce risk by inflating estimates — we manage risk by knowing the routes." },
+        { "num": "02", "title": "Documentation is a discipline, not a bottleneck.", "desc": "Our customs specialists are career professionals. They know the rules, the precedents, and the edge cases. Documentation moves at the speed of the team running it." },
+        { "num": "03", "title": "One accountable owner per shipment.", "desc": "Every consignment has a named logistics officer from quote to delivery. One inbox, one phone number, one person who owns the outcome." },
+        { "num": "04", "title": "Transparency is the default, not the exception.", "desc": "Real-time tracking, itemised invoicing, and proactive communication when anything deviates from plan. Surprises belong in the warehouse, not on the bill." }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Talk to us",
+      "title": "Want a partner who treats your shipment like their reputation?",
+      "ctaPrimary": "Get in touch"
+    }
+  },
+  "servicesPage": {
+    "head": {
+      "crumb": "Services",
+      "eyebrow": "Seven operational pillars",
+      "title": "Everything required to move goods across borders, under one accountable team.",
+      "sub": "From IOR and DDP through to freight forwarding, customs clearance, and warehousing — Equinox handles the full lifecycle so your team never has to."
+    },
+    "index": {
+      "items": [
+        { "anchor": "ior", "label": "01 · IOR / EOR" },
+        { "anchor": "ddp", "label": "02 · DDP" },
+        { "anchor": "freight", "label": "03 · Freight" },
+        { "anchor": "logistics", "label": "04 · Logistics" },
+        { "anchor": "compliance", "label": "05 · Compliance" },
+        { "anchor": "customs", "label": "06 · Customs" },
+        { "anchor": "warehousing", "label": "07 · Warehousing" }
+      ]
+    },
+    "sections": [
+      {
+        "anchor": "ior",
+        "eyebrow": "01 · IOR / EOR Services",
+        "image": "ship-aerial.jpg",
+        "imageAlt": "Container ship aerial",
+        "title": "Import and export on your behalf — without a local entity.",
+        "lede": "EQUINOX International provides professional Importer of Record (IOR) and Exporter of Record (EOR) services that enable international companies to import or export goods without the need to establish a local legal entity. Acting as the official importer or exporter on behalf of our clients, we manage regulatory compliance, documentation, duties, and tax requirements, ensuring that shipments fully comply with local laws and international trade regulations. Our IOR / EOR solutions support companies across a wide range of sectors, including telecom, technology, medical equipment, food, electronics, oil & gas, mining, and industrial projects.",
+        "bullets": [
+          "Acting as the legal Importer / Exporter of Record",
+          "Managing regulatory compliance and documentation",
+          "Handling required government and regulatory approvals",
+          "Processing bank documentation and Form (4) when required",
+          "Coordinating shipment release, delivery, or storage when needed"
+        ]
+      },
+      {
+        "anchor": "ddp",
+        "eyebrow": "02 · DDP",
+        "image": "crane-loading.jpg",
+        "imageAlt": "Crane loading containers",
+        "reverse": true,
+        "title": "The ultimate global trade solution for your tech hardware.",
+        "lede": "EQUINOX's DDP (Delivered Duty Paid) solution removes risk, handles the entire process, and ensures complete compliance — available across all destinations. Maintain full control over your shipment without the complexity of international trade regulations, and access global markets through a single, seamless workflow.",
+        "bullets": [
+          "End-to-end risk removal and full compliance management",
+          "Available across all destinations worldwide",
+          "Single-click access to global markets",
+          "No need to navigate legal or regulatory hurdles independently"
+        ]
+      },
+      {
+        "anchor": "freight",
+        "eyebrow": "03 · Freight Forwarding",
+        "image": "ship-plane.jpg",
+        "imageAlt": "Container ship and cargo plane aerial view",
+        "title": "Reliable freight forwarding across air, sea, and land.",
+        "lede": "EQUINOX offers reliable Freight Forwarding solutions, managing air, sea, and land shipments with efficiency and full compliance. From documentation to final delivery, our experienced team ensures smooth and secure cargo movement worldwide, working in accordance with international shipping standards and Incoterms®.",
+        "bullets": [
+          "Air freight: door-to-door rates, daily direct services, hazardous cargo handling, and full insurance support",
+          "Ocean freight: LCL, FCL, Break Bulk, and RoRo with global carrier networks and competitive rates",
+          "Land freight: extensive coverage across Egypt and the MENA region with specialized truck solutions",
+          "Project cargo: specialized handling for heavy, complex, and out-of-gauge shipments"
+        ]
+      },
+      {
+        "anchor": "logistics",
+        "eyebrow": "04 · Logistics & Supply Chain",
+        "image": "port-day.jpg",
+        "imageAlt": "Cargo at port",
+        "reverse": true,
+        "title": "Integrated supply chain solutions from origin to final destination.",
+        "lede": "EQUINOX International provides comprehensive logistics and supply chain solutions designed to ensure seamless operations from origin to final destination. A trusted provider of IOR, EOR, RMA, and 3PL logistics services, supporting global high-tech and telecom vendors as well as major telecom distributors in the Middle East — with fully compliant trade solutions including regulatory approvals and required licenses for inbound high-tech shipments to Egypt.",
+        "bullets": [
+          "End-to-end logistics management",
+          "Global IOR / EOR services",
+          "RMA & reverse logistics",
+          "3PL warehousing and distribution",
+          "Regulatory compliance and approvals",
+          "High-tech and telecom logistics support"
+        ]
+      },
+      {
+        "anchor": "compliance",
+        "eyebrow": "05 · Trade Compliance",
+        "image": "container-inspection.jpg",
+        "imageAlt": "Inspector on container being lifted by crane",
+        "title": "Dual-use hardware cleared with full compliance — across every border.",
+        "lede": "Every country has regulations governing the import of products across borders, and most technology hardware is considered dual-use — coming with extensive compliance requirements. EQUINOX navigates global trade compliance on your behalf, compliantly shipping dual-use technology hardware across borders and through customs, effectively and without delay.",
+        "bullets": [
+          "Country-specific import regulation navigation",
+          "Dual-use technology hardware compliance",
+          "Restricted and monitored goods advisory",
+          "Cross-border compliance documentation and filing"
+        ]
+      },
+      {
+        "anchor": "customs",
+        "eyebrow": "06 · Customs Clearance",
+        "image": "port-tugs.jpg",
+        "imageAlt": "Ship being tugged into port",
+        "reverse": true,
+        "title": "Professional customs clearance, start to finish.",
+        "lede": "We provide professional customs clearance services ensuring the smooth, efficient, and compliant movement of goods across borders. Our experienced team manages the full customs process, supporting ACID registration and Nafeza platform procedures — ensuring shipments comply with the latest Egyptian customs regulations and digital clearance systems.",
+        "bullets": [
+          "Import and export customs clearance",
+          "ACID registration and CargoX documentation",
+          "Nafeza platform processing",
+          "Regulatory approvals and permits",
+          "Customs documentation preparation",
+          "Duty and tax coordination",
+          "Coordination with customs authorities and related entities"
+        ]
+      },
+      {
+        "anchor": "warehousing",
+        "eyebrow": "07 · Warehousing",
+        "image": "warehousing.jpg",
+        "imageAlt": "Forklift loading cargo into aircraft at night",
+        "title": "Strategic warehousing for every scale of operation.",
+        "lede": "Strategic warehousing is an essential component of supply chain optimization, especially for shipping dual-use goods. Our state-of-the-art facilities are designed to oversee both domestic and international shipments of all sizes, providing flexibility and scalability tailored to your business needs.",
+        "bullets": [
+          "Domestic and international shipment handling of all sizes",
+          "Flexible and scalable storage solutions",
+          "Integrated with customs clearance and distribution workflows",
+          "Optimized for dual-use and high-tech cargo"
+        ]
+      }
+    ],
+    "process": {
+      "eyebrow": "How it works",
+      "title": "A six-stage operating model.",
+      "lede": "From your first request through to delivery confirmation — a single, transparent workflow we run identically for every client.",
+      "stages": [
+        { "num": "Stage 01", "title": "Brief & scope", "desc": "Cargo description, origin, destination, timing, and commercial terms collected through a structured intake." },
+        { "num": "Stage 02", "title": "Compliance pre-check", "desc": "We verify cargo eligibility, tariff classification, and any pre-shipment certifications required before quoting." },
+        { "num": "Stage 03", "title": "Commercial quote", "desc": "Itemised pricing with committed timelines. No hidden surcharges, no estimate-vs-final divergence." },
+        { "num": "Stage 04", "title": "Execution & dispatch", "desc": "Booking, loading, documentation, and dispatch handled by your assigned logistics officer." },
+        { "num": "Stage 05", "title": "In-transit visibility", "desc": "Milestone-level tracking through every leg, proactive flagging of any deviation from plan." },
+        { "num": "Stage 06", "title": "Clearance & delivery", "desc": "Customs clearance, final-mile delivery, proof of delivery, and reconciliation. Followed by a post-shipment review." }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Get started",
+      "title": "Have a shipment in mind?",
+      "sub": "Send us the scope and we'll come back with a fully-itemised quote within one business day.",
+      "ctaPrimary": "Request a quote"
+    },
+    "detail": {
+      "featuresTitle": "What this service covers."
+    }
+  },
+  "clientsPage": {
+    "head": {
+      "crumb": "Clients",
+      "eyebrow": "Trusted by industry leaders",
+      "title": "A portfolio that says more than we ever could.",
+      "sub": "Telecoms, infrastructure, distribution, and technology — the companies that engage Equinox tend to be the ones who can't afford a shipment to miss its window."
+    },
+    "metrics": [
+      { "value": "9", "suffix": "+", "label": "Enterprise clients", "isCounter": true },
+      { "value": "EG · AE", "label": "Markets served" },
+      { "value": "7", "label": "Industry sectors" },
+      { "value": "10", "suffix": "+", "label": "Years of partnerships", "isCounter": true }
+    ],
+    "portfolio": {
+      "eyebrow": "The portfolio",
+      "title": "Selected clients.",
+      "lede": "A representative cross-section of the partnerships we run. Several deeper engagements remain under confidentiality at the client's request.",
+      "items": [
+        { "num": "01 / Telecoms", "name": "Vodafone Egypt", "logoId": "vodafone", "desc": "One of the country's largest mobile operators. We support enterprise procurement and network-rollout shipments across multiple business units.", "tags": ["Egypt"] },
+        { "num": "02 / Capital", "name": "Benya Capital Misr", "logoId": "benya", "desc": "A diversified Egyptian holding group operating across digital infrastructure, fibre, and connected services.", "tags": ["Egypt"] },
+        { "num": "03 / Distribution", "name": "Westcon Comstor Dubai", "logoId": "westcon", "desc": "Global technology distribution. We coordinate import and customs clearance across the MENA corridor.", "tags": ["UAE"] },
+        { "num": "04 / Infrastructure", "name": "El Sewedy Digital", "logoId": "el-sewedy", "desc": "Part of a major Egyptian industrial group. Supporting digital infrastructure and integrated technology rollouts.", "tags": ["Egypt"] },
+        { "num": "05 / Ventures", "name": "KQTEL Ventures FZ LLC", "logoId": "kqtel", "desc": "A Dubai-based ventures arm with cross-border procurement and technology distribution needs.", "tags": ["UAE"] },
+        { "num": "06 / Hospitality Tech", "name": "Hoist Group", "logoId": "hoist", "desc": "European technology provider expanding into the Middle East. We support inbound shipments to the UAE.", "tags": ["UAE"] },
+        { "num": "07 / Distribution", "name": "Oasis Distribution", "logoId": "oasis", "desc": "A regional distributor operating across both Egypt and the UAE. Multi-corridor logistics under a single account.", "tags": ["Egypt", "UAE"] },
+        { "num": "08 / Networking", "name": "Infrateq Network Group MEA FZCO", "logoId": "infrateq", "desc": "Networking infrastructure for the MEA region. We handle the inbound flow through UAE clearance.", "tags": ["UAE"] },
+        { "num": "09 / Commerce", "name": "Egypt Soft Commerce — DRS MEA", "logoId": "egypt-soft", "desc": "A cross-border commerce and distribution platform working between Egypt and the UAE.", "tags": ["Egypt", "UAE"] },
+        { "num": "10 / Technology", "name": "NEC", "logoId": "nec", "desc": "Global co-developer of advanced technological solutions designed for safer communities and satisfied citizens.", "tags": ["Egypt"] }
+      ]
+    },
+    "register": {
+      "eyebrow": "Reference register",
+      "title1": "A formal index",
+      "title2": "of named partnerships.",
+      "lede": "For procurement teams who like things tabulated. The full active partner register, with markets and engagement type.",
+      "headers": { "n": "#", "client": "Client", "market": "Market", "sector": "Sector", "engagement": "Engagement" },
+      "rows": [
+        { "n": "01", "client": "Benya Capital Misr", "market": "Egypt", "sector": "Capital / Digital Infrastructure" },
+        { "n": "02", "client": "Vodafone Egypt", "market": "Egypt", "sector": "Telecommunications" },
+        { "n": "03", "client": "Westcon Comstor Dubai", "market": "UAE", "sector": "Technology Distribution" },
+        { "n": "04", "client": "KQTEL Ventures FZ LLC", "market": "UAE", "sector": "Ventures / Procurement" },
+        { "n": "05", "client": "El Sewedy Digital", "market": "Egypt", "sector": "Digital Infrastructure" },
+        { "n": "06", "client": "Hoist Group", "market": "UAE", "sector": "Hospitality Technology" },
+        { "n": "07", "client": "Oasis Distribution", "market": "Egypt · UAE", "sector": "Distribution" },
+        { "n": "08", "client": "Infrateq Network Group MEA FZCO", "market": "UAE", "sector": "Networking / MEA" },
+        { "n": "09", "client": "Egypt Soft Commerce — DRS MEA", "market": "Egypt · UAE", "sector": "Commerce / Distribution" },
+        { "n": "10", "client": "NEC", "market": "Egypt · UAE", "sector": "Technology / Infrastructure" }
+      ],
+      "active": "Active"
+    },
+    "cta": {
+      "eyebrow": "Become a partner",
+      "title": "Want to join this list?",
+      "sub": "Start with a single shipment. We'll show you what good logistics actually looks like.",
+      "ctaPrimary": "Open a conversation"
+    }
+  },
+  "teamPage": {
+    "head": {
+      "crumb": "Team",
+      "eyebrow": "A specialist team",
+      "title1": "The people who make",
+      "title2": "the shipments arrive.",
+      "sub": "A compact, senior team of customs, finance, and logistics professionals. Every shipment we move has one accountable owner — and a phone number that's actually answered."
+    },
+    "leadership": {
+      "eyebrow": "Leadership",
+      "title": "Direct contacts.",
+      "lede": "No call centre, no general inbox. Our team is small, senior, and directly reachable — and that's the whole point.",
+      "members": [
+        { "initials": "HE", "tag": "Executive Director", "role": "Executive Director", "name": "Hisham Elgezawy", "desc": "Overall responsibility for client relationships, commercial strategy, and the operational integrity of every engagement.", "phone": "+20 122 215 1756", "phoneHref": "+201222151756", "email": "h_gezawy@gfsegy.net" },
+        { "initials": "SE", "tag": "Financial & Admin", "role": "Financial & Admin Manager", "name": "Sherif Elkenany", "desc": "Finance, contracts, and administration. The person who makes sure invoicing is transparent and reconciliation is clean.", "phone": "+20 100 340 3408", "phoneHref": "+201003403408", "email": "shalkenany@equinoxint.net" },
+        { "initials": "RR", "tag": "Logistics", "role": "Logistics Officer", "name": "Rovana Raafat", "desc": "Day-to-day shipment ownership. Origin coordination, in-transit tracking, customs liaison, and proof-of-delivery sign-off.", "phone": "+20 127 404 1014", "phoneHref": "+201274041014", "email": "rovana.raafat@equinoxint.net" }
+      ]
+    },
+    "structure": {
+      "eyebrow": "Operating model",
+      "title": "A small team is a feature, not a constraint.",
+      "paragraphs": [
+        "Equinox is structured around senior generalists supported by a specialised customs clearance team. Every member of the operations group has direct industry experience — from port-side documentation through to bonded warehouse coordination.",
+        "This is deliberate. Logistics outcomes are won and lost on the experience of the person actually handling the file. A small team of career specialists consistently outperforms a large team built around process documents.",
+        "For every account, you'll work with the same logistics officer from intake through final delivery — and you'll reach the director directly when it matters."
+      ],
+      "stats": [
+        { "value": "3", "label": "Senior leaders" },
+        { "value": "5", "label": "Full-time team" },
+        { "value": "1", "label": "Officer per account" },
+        { "value": "24/7", "label": "Operational coverage" }
+      ]
+    },
+    "culture": {
+      "eyebrow": "How we work",
+      "title": "Team principles.",
+      "lede": "Three rules of the road that guide every interaction with our clients, suppliers, and customs counterparts.",
+      "principles": [
+        { "num": "Principle 01", "title": "Senior people, owning the file.", "desc": "Every consignment is owned by an experienced officer — not handed down a chain. The person quoting is the person delivering." },
+        { "num": "Principle 02", "title": "Communicate before the client has to ask.", "desc": "If a shipment deviates from plan, we tell you before you wonder. Proactive flagging is non-negotiable on our team." },
+        { "num": "Principle 03", "title": "Quiet professionalism over noise.", "desc": "We don't do hype. We do shipments that arrive when we said they would, with paperwork that holds up under audit." }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Speak to the team",
+      "title": "Reach someone senior, directly.",
+      "sub": "Skip the general inbox. Pick a contact above, or open a conversation with operations.",
+      "ctaPrimary": "Contact us"
+    }
+  },
+  "companyPage": {
+    "head": {
+      "crumb": "Company Overview",
+      "eyebrow": "Corporate Profile · 2026",
+      "title1": "Equinox International",
+      "title2": "for Import & Export.",
+      "sub": "A formal corporate overview — legal identity, structure, services, and references. Suitable for procurement vetting, vendor onboarding, or due-diligence review.",
+      "ctaPrimary": "Get Free Consultation",
+      "ctaSecondary": "Contact Us"
+    },
+    "legal": {
+      "eyebrow": "Section 01",
+      "title": "Legal & corporate identity.",
+      "lede": "Registered, licensed, and credentialed to act as an importer-of-record on behalf of third parties.",
+      "rows": [
+        { "k": "Company Name", "v": "Equinox International for Import & Export" },
+        { "k": "Activity", "v": "Import & Export on Behalf of Third Parties (Agency Services)" },
+        { "k": "Legal Form", "v": "Joint Stock Company (JSC)" },
+        { "k": "Registered Office", "v": "26 Mohamed Kamel Hussein St. · New Nozha · Cairo · Egypt" },
+        
+        
+        { "k": "Tax Registration", "v": "No. 516240099", "mono": true },
+        { "k": "Company Phone", "v": "+20 2 2621 0080", "tel": "+20226210080" },
+        { "k": "Markets of Operation", "v": "Egypt · United Arab Emirates · Wider MENA" }
+      ]
+    },
+    "operating": {
+      "eyebrow": "Section 02",
+      "title": "Operating model.",
+      "lede": "A specialist agency model — Equinox carries the credentials, the client carries the strategy.",
+      "mission": { "label": "Mission", "text": "Comprehensive, seamless import and supply solutions for businesses that lack the necessary licenses — managing every customs, regulatory, and logistical process so goods arrive on time and at quality." },
+      "vision": { "label": "Vision", "text": "To be the premier and most trusted logistical partner for local companies aiming for global market access — empowering them to compete without procedural restrictions." },
+      "values": [
+        { "num": "Value · 01", "title": "Logistical Efficiency", "desc": "Focusing on speed and precision in completing all operational stages." },
+        { "num": "Value · 02", "title": "Integrity & Transparency", "desc": "Building trust through clear dealings and full commitment." },
+        { "num": "Value · 03", "title": "Client Empowerment", "desc": "Letting clients focus on the core business — without worrying about complex import procedures." }
+      ]
+    },
+    "core": {
+      "eyebrow": "Section 03",
+      "title": "Core services.",
+      "lede": "An integrated package that enables our clients to import goods from anywhere in the world — under a single, accountable partner.",
+      "headers": { "n": "#", "service": "Service", "desc": "Description" },
+      "rows": [
+        { "n": "01", "service": "Import Agency on Behalf", "desc": "Importing all types of goods using Equinox's own import card and licenses, on behalf of clients without their own credentials." },
+        { "n": "02", "service": "Customs Clearance & Procedures", "desc": "Full handling of all clearance stages, official documentation, and government approvals — with correct application of customs regulations." },
+        { "n": "03", "service": "International Shipping", "desc": "Coordination of sea, air, and land shipping operations with shipment tracking from origin to client's final warehouses." },
+        { "n": "04", "service": "Freight Forwarding & Distribution", "desc": "Road haulage, intermediate warehousing, and last-mile distribution across Egypt and the GCC corridor." },
+        { "n": "05", "service": "Compliance & Quality", "desc": "Verification that all imported goods comply with Egyptian standard specifications and applicable destination regulations." }
+      ]
+    },
+    "references": {
+      "eyebrow": "Section 04",
+      "title": "Client references.",
+      "lede": "A distinguished portfolio of clients across Egypt and the UAE — including leaders in telecoms, technology, and infrastructure.",
+      "headers": { "n": "#", "client": "Client", "location": "Location" },
+      "rows": [
+        { "n": "01", "client": "Benya Capital Misr", "location": "Egypt" },
+        { "n": "02", "client": "Vodafone Egypt", "location": "Egypt" },
+        { "n": "03", "client": "Westcon Comstor Dubai", "location": "Dubai, UAE" },
+        { "n": "04", "client": "KQTEL Ventures FZ LLC", "location": "Dubai, UAE" },
+        { "n": "05", "client": "EL SEWEDY DIGITAL", "location": "Egypt" },
+        { "n": "06", "client": "HOIST GROUP", "location": "Dubai, UAE" },
+        { "n": "07", "client": "OASIS DISTRIBUTION", "location": "Egypt + Dubai" },
+        { "n": "08", "client": "INFRATEQ NETWORK GROUP MEA FZCO", "location": "Dubai, UAE" },
+        { "n": "09", "client": "Egypt Soft Commerce — DRS MEA", "location": "Egypt + Dubai" }
+      ]
+    }
+  },
+  "contactPage": {
+    "head": {
+      "crumb": "Contact",
+      "eyebrow": "Get in touch",
+      "title1": "Open a conversation",
+      "title2": "with operations.",
+      "sub": "Use the form below for new enquiries, or contact a team member directly. Either way, you'll hear back the same business day."
+    },
+    "meta": {
+      "office": { "h": "Office", "lines": ["26 Mohamed Kamel Hussein St.", "New Nozha · Cairo · Egypt"] },
+      "general": { "h": "General enquiries", "phone": "+20 2 2621 0080", "phoneHref": "+20226210080", "email": "info@equinoxint.net" },
+      "whatsapp": { "h": "WhatsApp · Operations", "phone": "+20 127 404 1014", "phoneHref": "201274041014", "note": "Quote requests and shipment tracking." },
+      "hours": { "h": "Office hours", "lines": ["Sun – Thu · 09:00 – 17:00 (EET)", "Critical shipment support available 24/7"] },
+      "direct": {
+        "h": "Direct lines",
+        "items": [
+          { "label": "Executive Director — Hisham Elgezawy", "phone": "+20 122 215 1756", "phoneHref": "+201222151756" },
+          { "label": "Financial & Admin — Sherif Elkenany", "phone": "+20 100 340 3408", "phoneHref": "+201003403408" },
+          { "label": "Logistics — Rovana Raafat", "phone": "+20 127 404 1014", "phoneHref": "+201274041014" }
+        ]
+      }
+    },
+    "form": {
+      "eyebrow": "Send an inquiry",
+      "title": "Tell us about the shipment.",
+      "sub": "Quotes typically come back within one business day.",
+      "labels": {
+        "name": "Full name",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "service": "Service",
+        "route": "Route",
+        "message": "Brief description"
+      },
+      "placeholders": {
+        "name": "Jane Doe",
+        "company": "Acme Industries",
+        "email": "jane@acme.com",
+        "phone": "+20 …",
+        "route": "e.g. Shanghai → Cairo",
+        "message": "Cargo type, volume, timing, and anything else relevant."
+      },
+      "services": [
+        "IOR / EOR Services",
+        "DDP",
+        "Freight Forwarding",
+        "Logistics & Supply Chain",
+        "Trade Compliance",
+        "Customs Clearance",
+        "Warehousing",
+        "Other / Multiple"
+      ],
+      "reply": "Reply within 1 business day",
+      "submit": "Send inquiry",
+      "success": "Inquiry received. A member of the operations team will respond within one business day at the email provided.",
+      "error": "Something went wrong. Please try again or email us directly at info@equinoxint.net."
+    },
+    "cta": {
+      "eyebrow": "Free consultation",
+      "title": "Get Free Consultation",
+      "sub": "Speak directly with our logistics and compliance specialists to discuss your shipment, import process, customs clearance, or regional operational requirements.",
+      "btn": "Book a Consultation",
+      "note": "Response within one business day."
+    },
+    "map": {
+      "eyebrow": "Find the office",
+      "title": "Cairo · New Nozha.",
+      "lede": "Equinox International, registered Joint Stock Company headquartered in New Nozha, Cairo. Walk-in visits by appointment.",
+      "hq": "Equinox HQ",
+      "address1": "26 Mohamed Kamel Hussein St.",
+      "address2": "New Nozha · Cairo · Egypt",
+      "coords": "30.1078° N · 31.3656° E"
+    }
+  },
+  "footer": {
+    "about": "A Cairo-headquartered import & export agency with operations across Egypt and the UAE. Joint Stock Company · Commercial Reg. 90812.",
+    "headings": {
+      "navigate": "Navigate",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "navLinks": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "clients": "Clients",
+      "company": "Company",
+      "contact": "Contact"
+    },
+    "serviceLinks": {
+      "ior": "IOR / EOR Services",
+      "ddp": "DDP",
+      "freight": "Freight Forwarding",
+      "logistics": "Logistics & Supply Chain",
+      "compliance": "Trade Compliance",
+      "customs": "Customs Clearance",
+      "warehousing": "Warehousing"
+    },
+    "contact": {
+      "address1": "26 Mohamed Kamel Hussein St.",
+      "address2": "New Nozha · Cairo · Egypt",
+      "phone": "+20 2 2621 0080",
+      "email": "info@equinoxint.net"
+    },
+    "copyright": "© 2026 Equinox International for Import & Export. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "compliance": "Compliance"
+    }
+  }
+}

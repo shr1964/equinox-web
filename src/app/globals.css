@@ -1,0 +1,204 @@
+@import "@heroui/styles";
+
+/* ============================================================
+   EQUINOX INTERNATIONAL — Design tokens
+   Mirrors styles.css from the prototype. Tailwind v4 reads
+   @theme for utility generation; the same values stay as CSS
+   variables for runtime theming (data-theme="dark").
+   ============================================================ */
+
+@theme inline {
+  /* Brand palette — Red & Black (approved) */
+  --color-navy-900: #1a1a1a;
+  --color-navy-800: #2a2a2a;
+  --color-navy-700: #333333;
+  --color-navy-600: #444444;
+  --color-navy-500: #5a5a5a;
+  --color-gold-700: #a80e1a;
+  --color-gold-500: #cc1020;
+  --color-gold-400: #e63040;
+  --color-surface: #f5f5f5;
+  --color-surface-2: #ebebeb;
+  --color-paper: #ffffff;
+  --color-ink-900: #1a1a1a;
+  --color-ink-800: #2a2a2a;
+  --color-ink-600: #4a4a4a;
+  --color-ink-500: #5a5a5a;
+  --color-ink-400: #9a9a9a;
+  --color-line: #e0e0e0;
+
+  /* Themed surfaces (light defaults; dark overrides below) */
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-card: var(--card);
+
+  /* Type families */
+  --font-display: var(--font-inter), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-mono-jb), ui-monospace, monospace;
+
+  /* Tracking */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-ultra: 0.22em;
+
+  /* Layout */
+  --container-equinox: 1320px;
+
+  /* Effects */
+  --radius-sm: 4px;
+  --radius-lg: 14px;
+  --shadow-soft: 0 12px 40px -16px rgba(10, 16, 39, 0.18);
+  --shadow-pill: 0 10px 30px -10px rgba(204, 16, 32, 0.55);
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Breakpoints — exactly match prototype (720, 1100) */
+  --breakpoint-sm: 720px;
+  --breakpoint-lg: 1100px;
+}
+
+:root {
+  --pad-x: clamp(24px, 4vw, 64px);
+  --section-y: clamp(80px, 10vw, 140px);
+  --section-y-tight: clamp(56px, 7vw, 88px);
+
+  --color-on-accent: #ffffff; /* white text on red primary button */
+  --bg: #ffffff;
+  --bg-alt: #f5f5f5;
+  --fg: #1a1a1a;
+  --fg-muted: #5a5a5a;
+  --card: #ffffff;
+  --line: #e0e0e0;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--fg);
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer base {
+  button {
+    font: inherit;
+    cursor: pointer;
+    border: 0;
+    background: none;
+    color: inherit;
+  }
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* ============================================================
+   Equinox-specific keyframes
+   ============================================================ */
+@keyframes eq-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes eq-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* RTL: reverse the marquee direction so it visually scrolls right-to-left in the
+   Arabic reading direction without re-authoring keyframes. */
+[dir="rtl"] .eq-marquee-track {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Keep the marquee stationary rather than letting the global rule
+     snap it to the -50% endpoint after a 0.001 ms "complete" cycle. */
+  .eq-marquee-track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Focus visible — accessibility */
+:where(a, button, [role="button"], input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--color-gold-500, #cc1020);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
