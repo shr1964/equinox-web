@@ -53,6 +53,64 @@ export const serviceBySlugQuery = `
   }
 `;
 
+export type CompanyInfoRow = {
+  label: string;
+  value: string;
+  order: number;
+  format?: "text" | "mono" | "tel";
+  tel?: string;
+};
+
+export type CompanyPageData = {
+  _id: string;
+  language: string;
+  heroEyebrow?: string;
+  heroCrumb?: string;
+  heroTitleLine1: string;
+  heroTitleLine2?: string;
+  heroSub?: string;
+  heroCtaPrimary?: string;
+  heroCtaSecondary?: string;
+  heroImage?: string | null;
+  sectionEyebrow?: string;
+  title: string;
+  description?: string;
+  infoRows?: CompanyInfoRow[];
+  metaTitle?: string;
+  metaDescription?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+};
+
+export const companyPageQuery = `
+  *[_type == "companyPage" && language == $locale] | order(_updatedAt desc) [0...1] {
+    _id,
+    language,
+    heroEyebrow,
+    heroCrumb,
+    heroTitleLine1,
+    heroTitleLine2,
+    heroSub,
+    heroCtaPrimary,
+    heroCtaSecondary,
+    "heroImage": heroImage.asset->url,
+    sectionEyebrow,
+    title,
+    description,
+    "infoRows": infoRows[] | order(order asc) {
+      label,
+      value,
+      order,
+      format,
+      tel
+    },
+    metaTitle,
+    metaDescription,
+    ogTitle,
+    ogDescription
+  }
+`;
+
 export const clientsQuery = `
   *[_type == "client" && language == $locale] | order(order asc) {
     _id,

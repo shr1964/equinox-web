@@ -33,7 +33,7 @@ export async function PageHead({
   const locale = await getLocale();
   const ldItems = crumbs.map((c) => ({
     label: c.label,
-    path: c.href ?? "",
+    path: c.href,
   }));
 
   return (

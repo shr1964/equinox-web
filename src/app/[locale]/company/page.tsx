@@ -6,7 +6,10 @@ import { Reveal } from "@/components/motion/reveal";
 import { SectionHeader } from "@/components/molecules/section-header";
 import { PageHead } from "@/components/organisms/page-head";
 import { PrimaryCTAButton } from "@/components/ui/PrimaryCTAButton";
+import { JsonLd, companyOrganizationSchema } from "@/components/seo/json-ld";
 import { siteMetadata } from "@/lib/seo/metadata";
+import { sanityFetch } from "@/lib/sanity";
+import { companyPageQuery, type CompanyPageData } from "@/lib/queries";
 
 interface LegalRow {
   k: string;
@@ -15,17 +18,85 @@ interface LegalRow {
   tel?: string;
 }
 
+/** Normalized shape the page renders, sourced from Sanity or the i18n JSON. */
+interface CompanyContent {
+  crumb: string;
+  eyebrow: string;
+  title1: string;
+  title2: string;
+  sub: string;
+  ctaPrimary: string;
+  ctaSecondary: string;
+  heroImage: string;
+  legalEyebrow: string;
+  legalTitle: string;
+  legalLede: string;
+  rows: LegalRow[];
+}
+
+async function getCompany(locale: string): Promise<CompanyPageData | null> {
+  const docs = await sanityFetch<CompanyPageData>({
+    query: companyPageQuery,
+    params: { locale },
+    tags: ["companyPage"],
+  });
+  return docs[0] ?? null;
+}
+
+/** Merge Sanity data over the i18n JSON so the page renders even before seeding. */
+async function getContent(locale: string): Promise<{
+  content: CompanyContent;
+  company: CompanyPageData | null;
+}> {
+  const t = await getTranslations({ locale, namespace: "companyPage" });
+  const jsonRows = t.raw("legal.rows") as LegalRow[];
+  const company = await getCompany(locale);
+
+  const rows: LegalRow[] =
+    company?.infoRows && company.infoRows.length > 0
+      ? company.infoRows.map((r) => ({
+          k: r.label,
+          v: r.value,
+          mono: r.format === "mono",
+          tel: r.format === "tel" ? r.tel : undefined,
+        }))
+      : jsonRows;
+
+  return {
+    company,
+    content: {
+      crumb: company?.heroCrumb ?? t("head.crumb"),
+      eyebrow: company?.heroEyebrow ?? t("head.eyebrow"),
+      title1: company?.heroTitleLine1 ?? t("head.title1"),
+      title2: company?.heroTitleLine2 ?? t("head.title2"),
+      sub: company?.heroSub ?? t("head.sub"),
+      ctaPrimary: company?.heroCtaPrimary ?? t("head.ctaPrimary"),
+      ctaSecondary: company?.heroCtaSecondary ?? t("head.ctaSecondary"),
+      heroImage: company?.heroImage || "ship-aerial.jpg",
+      legalEyebrow: company?.sectionEyebrow ?? t("legal.eyebrow"),
+      legalTitle: company?.title ?? t("legal.title"),
+      legalLede: company?.description ?? t("legal.lede"),
+      rows,
+    },
+  };
+}
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const company = await getCompany(locale);
   return siteMetadata({
     locale,
     path: "/company",
     titleKey: "company.title",
     descriptionKey: "company.description",
+    title: company?.metaTitle,
+    description: company?.metaDescription,
+    ogTitle: company?.ogTitle,
+    ogDescription: company?.ogDescription,
   });
 }
 
@@ -37,32 +108,33 @@ export default async function CompanyPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "companyPage" });
   const nav = await getTranslations({ locale, namespace: "nav" });
-  const legalRows = t.raw("legal.rows") as LegalRow[];
+  const { content, company } = await getContent(locale);
+  const legalRows = content.rows;
 
   return (
     <>
+      <JsonLd data={companyOrganizationSchema(locale, company)} />
       <PageHead
         crumbs={[
           { label: nav("home"), href: "/" },
-          { label: t("head.crumb") },
+          { label: content.crumb },
         ]}
-        eyebrow={t("head.eyebrow")}
+        eyebrow={content.eyebrow}
         title={
           <>
-            {t("head.title1")}
+            {content.title1}
             <br />
-            {t("head.title2")}
+            {content.title2}
           </>
         }
-        sub={t("head.sub")}
-        image="ship-aerial.jpg"
+        sub={content.sub}
+        image={content.heroImage}
       >
         <div className="mt-[36px] flex gap-[12px] flex-wrap">
-          <PrimaryCTAButton>{t("head.ctaPrimary")}</PrimaryCTAButton>
+          <PrimaryCTAButton>{content.ctaPrimary}</PrimaryCTAButton>
           <Button href="/contact" variant="ghost">
-            {t("head.ctaSecondary")}
+            {content.ctaSecondary}
           </Button>
         </div>
       </PageHead>
@@ -71,9 +143,9 @@ export default async function CompanyPage({
       <section className="py-[var(--section-y)]">
         <Container>
           <SectionHeader
-            eyebrow={t("legal.eyebrow")}
-            title={t("legal.title")}
-            intro={t("legal.lede")}
+            eyebrow={content.legalEyebrow}
+            title={content.legalTitle}
+            intro={content.legalLede}
           />
           <Reveal className="rounded-[14px] bg-[var(--card)] border border-[var(--line)] overflow-hidden">
             <div className="overflow-x-auto">

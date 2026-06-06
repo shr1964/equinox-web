@@ -23,18 +23,29 @@ export async function siteMetadata({
   path,
   titleKey,
   descriptionKey,
+  title: titleOverride,
+  description: descriptionOverride,
+  ogTitle,
+  ogDescription,
 }: {
   locale: string;
   path: string;
   titleKey?: string;
   descriptionKey?: string;
+  /** Explicit values (e.g. from Sanity) — take precedence over the i18n keys. */
+  title?: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "seo" });
 
-  const title = titleKey ? t(titleKey) : t("home.title");
-  const description = descriptionKey
-    ? t(descriptionKey)
-    : t("home.description");
+  const title = titleOverride ?? (titleKey ? t(titleKey) : t("home.title"));
+  const description =
+    descriptionOverride ??
+    (descriptionKey ? t(descriptionKey) : t("home.description"));
+  const ogTitleResolved = ogTitle ?? title;
+  const ogDescriptionResolved = ogDescription ?? description;
 
   const canonical = `${SITE_URL}/${locale}${path === "/" ? "" : path}`;
   const languages: Record<string, string> = {};
@@ -56,8 +67,8 @@ export async function siteMetadata({
     openGraph: {
       type: "website",
       url: canonical,
-      title,
-      description,
+      title: ogTitleResolved,
+      description: ogDescriptionResolved,
       siteName: "Equinox International",
       locale: locale === "ar" ? "ar_EG" : "en_US",
       alternateLocale: locale === "ar" ? "en_US" : "ar_EG",
@@ -65,8 +76,8 @@ export async function siteMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: ogTitleResolved,
+      description: ogDescriptionResolved,
       images: [OG_IMAGE.url],
     },
     robots: { index: true, follow: true },
