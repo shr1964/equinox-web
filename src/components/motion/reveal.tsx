@@ -1,8 +1,9 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import type { HTMLMotionProps } from "framer-motion";
 import { revealVariants, revealViewport, staggerParent } from "@/lib/motion/variants";
+import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 
 type RevealProps = Omit<HTMLMotionProps<"div">, "variants" | "initial" | "whileInView" | "viewport"> & {
   delay?: number;
@@ -20,7 +21,7 @@ export function Reveal({
   children,
   ...rest
 }: RevealProps) {
-  const reduce = useReducedMotion();
+  const reduce = usePrefersReducedMotion();
   const Component = motion[as] as typeof motion.div;
 
   if (reduce) {
@@ -53,7 +54,7 @@ export function Stagger({
 }: Omit<HTMLMotionProps<"div">, "variants" | "initial" | "whileInView" | "viewport"> & {
   as?: "div" | "section" | "ul";
 }) {
-  const reduce = useReducedMotion();
+  const reduce = usePrefersReducedMotion();
   const Component = motion[as] as typeof motion.div;
 
   if (reduce) {

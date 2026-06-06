@@ -61,8 +61,8 @@ const CARD_CONTENT = {
     cardDescription: "Air, sea, and land shipments managed with full compliance from documentation to final delivery.",
   },
   logistics: {
-    cardTitle:       "Logistics & Supply Chain",
-    cardDescription: "End-to-end supply chain management covering IOR, 3PL warehousing, and reverse logistics.",
+    cardTitle:       "Logistics & Supply Chain Solutions",
+    cardDescription: "End-to-end supply chain planning and optimization — IOR/EOR, 3PL warehousing, freight coordination, and reverse logistics.",
   },
   compliance: {
     cardTitle:       "Trade Compliance",
@@ -70,7 +70,7 @@ const CARD_CONTENT = {
   },
   customs: {
     cardTitle:       "Customs Clearance",
-    cardDescription: "Professional clearance with ACID registration, Nafeza processing, and full documentation support.",
+    cardDescription: "Import and export clearance with ACID registration, Nafeza processing, and full documentation support.",
   },
   warehousing: {
     cardTitle:       "Warehousing & Storage",

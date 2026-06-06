@@ -112,8 +112,8 @@
           "image": "port-day.jpg",
           "imageAlt": "Cargo at port",
           "title1": "Logistics &",
-          "title2": "supply chain",
-          "desc": "End-to-end supply chain management covering IOR, 3PL warehousing, and reverse logistics."
+          "title2": "Supply Chain Solutions",
+          "desc": "End-to-end supply chain planning and optimization — IOR/EOR, 3PL warehousing, freight coordination, and reverse logistics."
         },
         {
           "anchor": "compliance",
@@ -128,8 +128,8 @@
           "image": "port-tugs.jpg",
           "imageAlt": "Ship being tugged into port",
           "title1": "Customs",
-          "title2": "clearance",
-          "desc": "Professional clearance with ACID registration, Nafeza processing, and full documentation support."
+          "title2": "Clearance",
+          "desc": "Import and export clearance with ACID registration, Nafeza processing, and full documentation support."
         },
         {
           "anchor": "warehousing",
@@ -406,19 +406,19 @@
       },
       {
         "anchor": "logistics",
-        "eyebrow": "04 · Logistics & Supply Chain",
+        "eyebrow": "04 · Logistics & Supply Chain Solutions",
         "image": "port-day.jpg",
         "imageAlt": "Cargo at port",
         "reverse": true,
-        "title": "Integrated supply chain solutions from origin to final destination.",
-        "lede": "EQUINOX International provides comprehensive logistics and supply chain solutions designed to ensure seamless operations from origin to final destination. A trusted provider of IOR, EOR, RMA, and 3PL logistics services, supporting global high-tech and telecom vendors as well as major telecom distributors in the Middle East — with fully compliant trade solutions including regulatory approvals and required licenses for inbound high-tech shipments to Egypt.",
+        "title": "Integrated logistics and supply chain solutions, origin to destination.",
+        "lede": "EQUINOX International delivers end-to-end logistics and supply chain solutions engineered to keep goods moving seamlessly from origin to final destination. We plan, coordinate, and optimize every link in the chain — freight, vendors, carriers, and warehousing — to compress lead times and reduce landed cost. As a trusted provider of IOR, EOR, RMA, and 3PL services, we support global high-tech and telecom vendors and major Middle East distributors, with fully compliant trade solutions including regulatory approvals and the licenses required for inbound high-tech shipments to Egypt.",
         "bullets": [
-          "End-to-end logistics management",
-          "Global IOR / EOR services",
-          "RMA & reverse logistics",
-          "3PL warehousing and distribution",
-          "Regulatory compliance and approvals",
-          "High-tech and telecom logistics support"
+          "End-to-end logistics planning and supply chain optimization",
+          "Freight coordination across air, sea, and land",
+          "Vendor and carrier management under one accountable partner",
+          "Global IOR / EOR services, RMA, and reverse logistics",
+          "3PL warehousing, distribution, and regulatory approvals",
+          "Real-time delivery visibility and cost-efficient operations"
         ]
       },
       {
@@ -441,16 +441,15 @@
         "image": "port-tugs.jpg",
         "imageAlt": "Ship being tugged into port",
         "reverse": true,
-        "title": "Professional customs clearance, start to finish.",
-        "lede": "We provide professional customs clearance services ensuring the smooth, efficient, and compliant movement of goods across borders. Our experienced team manages the full customs process, supporting ACID registration and Nafeza platform procedures — ensuring shipments comply with the latest Egyptian customs regulations and digital clearance systems.",
+        "title": "End-to-end customs clearance for imports and exports.",
+        "lede": "EQUINOX provides professional import and export customs clearance, ensuring the smooth, efficient, and compliant movement of goods across borders. Our experienced team manages the entire customs process end to end — from documentation and ACID registration through Nafeza platform procedures and final release — keeping every shipment aligned with the latest Egyptian customs regulations and digital clearance systems, and coordinating with customs authorities and related entities on your behalf.",
         "bullets": [
-          "Import and export customs clearance",
-          "ACID registration and CargoX documentation",
-          "Nafeza platform processing",
-          "Regulatory approvals and permits",
-          "Customs documentation preparation",
-          "Duty and tax coordination",
-          "Coordination with customs authorities and related entities"
+          "Import customs clearance",
+          "Export customs clearance",
+          "Documentation processing — ACID registration, CargoX, and permits",
+          "Regulatory compliance with Egyptian customs regulations",
+          "Clearance coordination via the Nafeza platform and with customs authorities",
+          "End-to-end customs support, including duty and tax coordination"
         ]
       },
       {
@@ -714,7 +713,7 @@
         "IOR / EOR Services",
         "DDP",
         "Freight Forwarding",
-        "Logistics & Supply Chain",
+        "Logistics & Supply Chain Solutions",
         "Trade Compliance",
         "Customs Clearance",
         "Warehousing",
@@ -761,7 +760,7 @@
       "ior": "IOR / EOR Services",
       "ddp": "DDP",
       "freight": "Freight Forwarding",
-      "logistics": "Logistics & Supply Chain",
+      "logistics": "Logistics & Supply Chain Solutions",
       "compliance": "Trade Compliance",
       "customs": "Customs Clearance",
       "warehousing": "Warehousing"

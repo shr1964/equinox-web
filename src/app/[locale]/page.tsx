@@ -98,7 +98,8 @@ export default async function HomePage({
             // JSON is the final safety net for when Sanity docs have no content at all.
             cardTitle: s.cardTitle || j?.title1 || "",
             cardDesc:  s.cardDesc  || j?.desc   || "",
-            image:     s.image    || (j ? `/img/${j.image}` : "crane-loading.jpg"),
+            // Sanity URL (http) or raw filename — ServiceTile owns the /img/ prefix.
+            image:     s.image || j?.image || "crane-loading.jpg",
             imageAlt:  s.imageAlt || j?.imageAlt || "",
             cardOrder: s.cardOrder ?? i + 1,
           };
@@ -107,7 +108,8 @@ export default async function HomePage({
           anchor:    s.anchor,
           cardTitle: s.title1 + (s.title2 ? " " + s.title2 : ""),
           cardDesc:  s.desc,
-          image:     `/img/${s.image}`,
+          // Raw filename — ServiceTile prepends /img/ (http URLs pass through).
+          image:     s.image,
           imageAlt:  s.imageAlt,
           cardOrder: i + 1,
         }));

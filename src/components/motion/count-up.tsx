@@ -5,10 +5,10 @@ import {
   useInView,
   useMotionValue,
   animate,
-  useReducedMotion,
   type Transition,
 } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { usePrefersReducedMotion } from "@/hooks/use-prefers-reduced-motion";
 
 interface CountUpProps {
   to: number;
@@ -20,12 +20,11 @@ interface CountUpProps {
 }
 
 /**
- * Counts from 0 → `to` once the element scrolls into view.
- * Reproduces app.js's animated counter (ease-out cubic, 1600ms).
+ * Counts from 0 → `to` once the element scrolls into view (ease-out cubic, 1.6s).
  *
- * Reduced-motion users see the final value immediately, but we initialise
- * `display` from the resolved-motion-preference value to avoid a cascading
- * setState from inside an effect.
+ * Reduced-motion users see the final value immediately. The displayed value is
+ * derived during render — never set from an effect for the reduced case — so the
+ * component is hydration-safe and free of cascading effect renders.
  */
 export function CountUp({
   to,
@@ -36,18 +35,16 @@ export function CountUp({
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.4 });
   const value = useMotionValue(0);
-  const reduce = useReducedMotion();
-  const [display, setDisplay] = useState(() =>
-    reduce ? to.toFixed(decimals) : (0).toFixed(decimals),
-  );
+  const reduce = usePrefersReducedMotion();
+  // Animated readout. Starts at "0" so SSR and the client's first render agree.
+  const [animated, setAnimated] = useState(() => (0).toFixed(decimals));
 
   useEffect(() => {
-    if (reduce) return;
-    const unsub = value.on("change", (v) => {
-      setDisplay(v.toFixed(decimals));
-    });
-    return unsub;
-  }, [value, decimals, reduce]);
+    const unsubscribe = value.on("change", (v) =>
+      setAnimated(v.toFixed(decimals)),
+    );
+    return unsubscribe;
+  }, [value, decimals]);
 
   useEffect(() => {
     if (!inView || reduce) return;
@@ -58,6 +55,10 @@ export function CountUp({
     });
     return () => controls.stop();
   }, [inView, to, duration, reduce, value]);
+
+  // Reduced-motion users get the final value directly; everyone else sees the
+  // animated readout tick up.
+  const display = reduce ? to.toFixed(decimals) : animated;
 
   return (
     <motion.span ref={ref} className={className}>

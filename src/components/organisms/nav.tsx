@@ -23,7 +23,7 @@ const NAV_SERVICE_LABELS: Record<string, string> = {
   ior:         "IOR & EOR",
   ddp:         "DDP",
   freight:     "Freight Forwarding",
-  logistics:   "Logistics & Supply Chain",
+  logistics:   "Logistics & Supply Chain Solutions",
   compliance:  "Trade Compliance",
   customs:     "Customs Clearance",
   warehousing: "Warehousing",
